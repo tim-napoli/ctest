@@ -16,3 +16,8 @@ add_executable(example
                example/example.c)
 target_link_libraries(example ctest)
 
+install(TARGETS ctest
+        ARCHIVE DESTINATION lib)
+install(DIRECTORY include/ DESTINATION include/
+        FILES_MATCHING PATTERN "*.h")
+
