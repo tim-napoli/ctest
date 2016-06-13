@@ -19,11 +19,11 @@
 
 #define LOG_ERROR(_log) \
     fprintf(stderr, \
-            LOG_FMT_COLOR_RED "%-50sFailure\n" LOG_FMT_RESET, (_log));
+            LOG_FMT_COLOR_RED "%-70sFailure\n" LOG_FMT_RESET, (_log));
 
 #define LOG_SUCCESS(_log) \
     fprintf(stderr, \
-            LOG_FMT_COLOR_GREEN "%-50sSuccess\n" LOG_FMT_RESET, (_log));
+            LOG_FMT_COLOR_GREEN "%-70sSuccess\n" LOG_FMT_RESET, (_log));
 
 extern unsigned int ctest_executed_tests;
 extern unsigned int ctest_success_tests;
